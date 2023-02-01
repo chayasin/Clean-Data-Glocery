@@ -1,6 +1,7 @@
 from re import search
 import streamlit as st
 import pandas as pd
+import openpyxl
 
 # Setpu stremlit
 st.set_page_config(layout="wide")
