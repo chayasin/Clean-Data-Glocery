@@ -1,13 +1,11 @@
-from re import search
 import streamlit as st
 import pandas as pd
-import openpyxl
 
 # Setpu stremlit
 st.set_page_config(layout="wide")
 
 # Import data, Clean Data
-fk_dat = pd.read_excel('Freshket_complete.xlsx')
+fk_dat = pd.read_csv('Freshket_complete.csv')
 mk_dat = pd.read_csv('Makroclick_complete.csv')
 
 fk_dat = fk_dat[['ProductName', 'Volumn', 'FullPrice','CurrentPrice']]
